@@ -8,12 +8,13 @@ class Solution {
         String[] str = s.split(" ");
         int n = str.length;
         
-        int[] numbers = new int[n];
-        
         //배열값 정수로 변환
-        for(int i=0; i<str.length; i++){
-            numbers[i] = Integer.parseInt(str[i]); 
+        int[] numbers = new int[n];
+        for(int i=0; i<n; i++){
+            numbers[i] = Integer.parseInt(str[i]);    
         }
+        
+        
         //배열 오름차순
         Arrays.sort(numbers);
         
